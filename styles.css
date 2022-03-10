@@ -1,0 +1,52 @@
+body {
+    background-color: #e7e3e6;
+    color: #2b333e;
+    font-family: sans-serif;
+}
+
+#header {
+    text-align: center;
+}
+
+.plays {
+    display: flex;
+    gap: 5px;
+}
+.play-option {
+    height: 100px;
+    width: auto;
+}
+
+.play-button {
+    background-color: #26a7da;
+    border-radius: 0.4em;
+    border: .2rem solid #2b333e;
+}
+
+.play-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  }
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#scoreboard {
+    background-color:#2b333e;
+    color: #e7e3e6;
+    width: 200px;
+    border-radius: 0.4em;
+    padding: 0px 10px 10px 10px;
+    margin-bottom: 50px;
+}
+
+#score-title {
+    font-size: 25px;
+    font-family: monospace;
+    text-align: center;
+    text-shadow: 0 0 3px #d21943;
+}
+
+

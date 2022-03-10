@@ -3,10 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Rock, Paper, Scissors</title>
+
 </head>
 
 <body>
+    <div id="header">
+        <h1>Let's Play "Rock, Paper, Scissors"!</h1>
+        <h2>First one to five wins.</h2>
+    </div>
+
+    <div id="main-container">
+        <div id="player-plays">
+            <h2>You (Click to make a play)</h2>
+            <div class="plays play-buttons">
+                <div class="play-button"><img id="player-rock" class="play-option" src="images/rsp-rock.png"></div>
+                <div class="play-button"><img id="player-paper" class="play-option" src="images/rsp-paper.png"></div>
+                <div class="play-button"><img id="player-scissors" class="play-option" src="images/rsp-scissors.png">
+                </div>
+            </div>
+        </div>
+        <div id="scoreboard">
+            <p id="score-title">CURRENT SCORE</p>
+            <p>You:</p>
+            <p>Computer:</p>
+        </div>
+        <div id="computer-plays">
+            <h2>Computer</h2>
+            <div class="plays play-buttons">
+                <div class="play-button"><img id="computer-rock" class="play-option" src="images/rsp-rock.png"></div>
+                <div class="play-button"><img id="computer-paper" class="play-option" src="images/rsp-paper.png"></div>
+                <div class="play-button"><img id="computer-scissors" class="play-option" src="images/rsp-scissors.png">
+                </div>
+            </div>
+        </div>
+        <div id="play-results">
+
+        </div>
+    </div>
+
+
+
     <script src="app.js"></script>
 </body>
 
