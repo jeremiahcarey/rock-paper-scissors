@@ -99,22 +99,3 @@ playerButtons.forEach(button => button.addEventListener('click', function (e) {
 restartBtn.addEventListener('click', reset);
 
 
-// function game() {
-//     while (computerScore < 5 && playerScore < 5)
-// }
-
-// function game() {
-//     for (let i = 0; i < 5; i++) {
-//         const playerSelection = prompt('Rock, paper, or scissors? Enter your play below. (We\'ll play five rounds.)');
-//         console.log(playRound(playerSelection, computerPlay()));
-//     }
-//     if (playerScore === computerScore) {
-//         console.log(`We tied! ${playerScore} apiece.`);
-//     } else if (playerScore > computerScore) {
-//         console.log(`You won this match! ${playerScore} to ${computerScore}`);
-//     } else {
-//         console.log(`I won this time. ${computerScore} to ${playerScore}`);
-//     }
-//     playerScore = 0;
-//     computerScore = 0;
-// }
