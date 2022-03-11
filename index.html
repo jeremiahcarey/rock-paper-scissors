@@ -17,30 +17,34 @@
     <div id="main-container">
         <div id="player-plays">
             <h2>You (Click to make a play)</h2>
-            <div class="plays play-buttons">
-                <div class="play-button"><img id="player-rock" class="play-option" src="images/rsp-rock.png"></div>
-                <div class="play-button"><img id="player-paper" class="play-option" src="images/rsp-paper.png"></div>
-                <div class="play-button"><img id="player-scissors" class="play-option" src="images/rsp-scissors.png">
+            <div class="play-buttons">
+                <div class="play-button player-play"><img id="rock" class="player-option" src="images/rsp-rock.png">
+                </div>
+                <div class="play-button player-play"><img id="paper" class="player-option" src="images/rsp-paper.png">
+                </div>
+                <div class="play-button player-play"><img id="scissors" class="player-option"
+                        src="images/rsp-scissors.png">
                 </div>
             </div>
         </div>
         <div id="scoreboard">
             <p id="score-title">CURRENT SCORE</p>
-            <p>You:</p>
-            <p>Computer:</p>
+            <p>You:<span id="you-score"></span></p>
+            <p>Computer:<span id="computer-score"></span></p>
         </div>
         <div id="computer-plays">
             <h2>Computer</h2>
-            <div class="plays play-buttons">
-                <div class="play-button"><img id="computer-rock" class="play-option" src="images/rsp-rock.png"></div>
-                <div class="play-button"><img id="computer-paper" class="play-option" src="images/rsp-paper.png"></div>
-                <div class="play-button"><img id="computer-scissors" class="play-option" src="images/rsp-scissors.png">
+            <div class="play-buttons">
+                <div class="play-button" id="computer-rock"><img class="play-option" src="images/rsp-rock.png">
+                </div>
+                <div class="play-button" id="computer-paper"><img class="play-option" src="images/rsp-paper.png"></div>
+                <div class="play-button" id="computer-scissors"><img class="play-option" src="images/rsp-scissors.png">
                 </div>
             </div>
         </div>
-        <div id="play-results">
-
-        </div>
+    </div>
+    <div id="play-results">
+        <p id="print-results">Waiting for play...</p>
     </div>
 
 
