@@ -1,1 +1,3 @@
 # rock_paper_scissors
+
+This began as a console-based game of rock, paper, scissors to practice writing basic javascript functions an exercise to test what I'd learned so far in The Odin Project. After learning more about the DOM and its manipulation, an html/css ui was set up and the code was updated to interact with it.  In addition to practicing working with the DOM, doing so helped me to review some basic concepts of CSS (like using flexbox for layouts). I also used it to as an opportunity to learn a few new techniques, such as using SetTimeout to change classList after a certain period of time, and making a modal to summarize each game and to give the option to play again.

@@ -84,12 +84,12 @@ body {
 
 #endgame-content {
   background-color: #e7e3e6;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto; 
   padding: 25px;
   border: 1px solid #2b333e;
   width: 250px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Could be more or less, depending on screen size */
+  align-items: center;
 }
 
