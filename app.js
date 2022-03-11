@@ -6,6 +6,9 @@ const computerScissorsBtn = document.querySelector('#computer-scissors');
 const scorePlayer = document.querySelector('#you-score');
 const scoreComputer = document.querySelector('#computer-score');
 const results = document.querySelector('#print-results');
+const endgameModal = document.querySelector('#endgame-modal');
+const endgameSummary = document.querySelector('#endgame-text');
+const restartBtn = document.querySelector('#restart-btn');
 
 function computerPlay() {
     const play = Math.floor(Math.random() * 3 + 1);
@@ -66,11 +69,34 @@ function undoPlayed() {
     allButtons.forEach(button => button.classList.remove('played'));
 }
 
+function launchModal() {
+    endgameModal.style.display = 'block';
+    if (computerScore > playerScore) {
+        endgameSummary.innerText = `You've lost this match, ${computerScore} to ${playerScore}.  Want a rematch?`;
+    } else {
+        endgameSummary.innerText = `You won this time, ${playerScore} to ${computerScore}!`;
+    }
+}
+
+function reset() {
+    computerScore = 0;
+    playerScore = 0;
+    updateScores();
+    results.innerText = 'Waiting for play...'
+    endgameModal.style.display = 'none';
+}
+
 playerButtons.forEach(button => button.addEventListener('click', function (e) {
     e.target.parentElement.classList.add('played');
     playRound(e.target.id, computerPlay());
-    const undoPlayDelay = setTimeout(undoPlayed, 2500);
+    const undoPlayDelay = setTimeout(undoPlayed, 1500);
+    if (computerScore < 5 && playerScore < 5) return;
+    else if (computerScore >= 5 || playerScore >= 5) {
+        launchModal();
+    }
 }));
+
+restartBtn.addEventListener('click', reset);
 
 
 // function game() {
